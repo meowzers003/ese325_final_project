@@ -2,7 +2,7 @@ int ledA = 6;
 int sensorPin = A5;
 int sensorValue;
 int interval = 100;  // ms
-int mode = 0;   // 0 for normal mode, 1 for alarm mode
+int mode = 0;   // 0 for idle mode, 1 for indicating mode
 int threshold = 400;
 int start_check = 0;
 int light_detect = 0;

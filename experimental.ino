@@ -27,11 +27,11 @@ void loop() {
   }
   else {
     if((light_detect == 1) && (start_check == 1)){
+      Serial.print("light detected for: "); //display duration time
+      Serial.println(indicator_time);
       digitalWrite(ledA, HIGH);  // emitting
       digitalWrite(sensorPin, LOW);
       delay(indicator_time);
-      Serial.print("light detected for: ");
-      Serial.println(indicator_time);
       light_detect = 0;
       start_time = 0;
       end_time = 0;

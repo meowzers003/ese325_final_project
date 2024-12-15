@@ -38,10 +38,10 @@ void loop(){
     Serial.println(indicator_time); 
     digitalWrite(ledPin, HIGH);  //Turn led on
     delay(indicator_time);
-    digitalWrite(ledPin, LOW);  //Turn led on
+    digitalWrite(ledPin, LOW);  //Turn led off
   }
   else{
-    digitalWrite(ledPin, LOW); //Turn led off
+    digitalWrite(ledPin, LOW); //keep led off
   }
 
   delay(100); //Small delay
